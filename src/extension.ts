@@ -13,11 +13,13 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('vs-utils.helloWorld', () => {
+	let disposable = vscode.commands.registerCommand('vs-utils.refreshCspell', () => {
 		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from vs-utils!');
+		// https://github.com/streetsidesoftware/vscode-spell-checker/blob/v1.9.0/packages/client/package.json#L92
+		vscode.commands.executeCommand("cSpell.disableForGlobal");
+		vscode.commands.executeCommand("cSpell.enableForGlobal");
+			// Display a message box to the user
+		vscode.window.showInformationMessage('CSpell Refreshed');
 	});
 
 	context.subscriptions.push(disposable);
