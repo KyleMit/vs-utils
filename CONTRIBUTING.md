@@ -49,6 +49,17 @@ npm install
   * You can create folders inside the `test` folder to structure your tests any way you want.
 
 
+## Publishing
+
+```bash
+npm install -g vsce
+```
+
+```bash
+vsce login
+vsce package
+vsce publish
+```
 
 ## Further Resources
 

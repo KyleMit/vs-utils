@@ -7,7 +7,7 @@
     "engines": {
         "vscode": "^1.48.0"
     },
-    "icon": "/images/code-cog.png",
+    "icon": "images/code-cog.png",
     "categories": ["Other"],
     "keywords": ["tools"],
     "activationEvents": [
