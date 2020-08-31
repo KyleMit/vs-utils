@@ -3,13 +3,13 @@
     "displayName": "vs-utils",
     "description": "Personal utilities for VS Code",
     "publisher": "KyleMit",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.48.0"
     },
-    "categories": [
-        "Other"
-    ],
+    "icon": "/images/code-cog.png",
+    "categories": ["Other"],
+    "keywords": ["tools"],
     "activationEvents": [
         "onCommand:vs-utils.refreshCspell"
     ],
