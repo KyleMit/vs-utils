@@ -20,6 +20,7 @@ vt-utils
 ├── .eslintrc.json        # style rules for js
 ├── .vscodeignore         # ignored files when packaging extension
 ├── .gitignore            # ignored files in git
+├── LICENSE               # MIT license info
 ├── CHANGELOG.md          # release history
 ├── CONTRIBUTING.md       # info for local development
 └── README.md             # overview of extension during installation
@@ -58,6 +59,7 @@ npm install -g vsce
 ```bash
 vsce login
 vsce package
+vsce publish minor
 vsce publish
 ```
 

@@ -1,6 +1,4 @@
-# VS Utils
-
-[KyleMit.VS-Utils](https://marketplace.visualstudio.com/items?itemName=KyleMit.vs-utils)
+# [VS Utils](https://marketplace.visualstudio.com/items?itemName=KyleMit.vs-utils)
 
 Some grab bag utilities I, KyleMit, find helpful for VS Code - download and suggest updates if that's your thing.
 
