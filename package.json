@@ -18,14 +18,23 @@
         "tools"
     ],
     "activationEvents": [
-        "onCommand:vs-utils.refreshCspell"
+        "onCommand:vs-utils.refreshCspell",
+        "onCommand:vs-utils.removeDuplicates"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "commands": [{
-            "command": "vs-utils.refreshCspell",
-            "title": "Utils: Refresh Spell Checker"
-        }]
+                "command": "vs-utils.refreshCspell",
+                "title": "Refresh Spell Checker",
+                "category": "Utils"
+            },
+            {
+                "command": "vs-utils.removeDuplicates",
+                "title": "Remove Duplicate Lines",
+                "category": "Utils",
+                "enablement": "editorHasSelection"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
