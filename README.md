@@ -10,13 +10,16 @@ Run Disable Spelling and Enable Spelling back to back in order to Refresh Spelli
 
 ![refresh spelling command](images/refresh-spell-command.png)
 
-## Requirements
+**Note**: Must have [**Code Spell Checker**](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) by Street Side Software installed in order to refresh
 
-Must have [**Code Spell Checker**](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) by Street Side Software installed in order to refresh
+### Remove Duplicate Lines
 
+Remove Duplicate Lines from selected text
 
-## Release Notes
+![remove duplicate lines command](images/remove-duplicate-lines-command.png)
 
-### 1.0.0
+## Documentation
 
-Initial release of vs-utils
+* [Changelog](https://github.com/KyleMit/vs-utils/blob/master/CHANGELOG.md)
+* [Backlog](https://github.com/KyleMit/vs-utils/blob/master/BACKLOG.md)
+* [Contributing](https://github.com/KyleMit/vs-utils/blob/master/CONTRIBUTING.md)

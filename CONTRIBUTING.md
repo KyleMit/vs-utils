@@ -1,4 +1,4 @@
-# Welcome to your VS Code Extension
+# Extension Development
 
 If you're here, it means you're me or looking to help me - in either case - a warm hello 👋
 

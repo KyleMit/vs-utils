@@ -1,10 +1,10 @@
 # Idea Backlog
 
-## Refresh Spell Check
+## Refresh Spell Check ✔
 
 [add command to refresh external dictionary contents #509](https://github.com/streetsidesoftware/vscode-spell-checker/issues/509)
 
-## Remove Duplicate Lines
+## Remove Duplicate Lines ✔
 
 Just like [In Excel](https://support.microsoft.com/en-us/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d)
 
