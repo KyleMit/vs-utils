@@ -8,6 +8,11 @@
 
 Just like [In Excel](https://support.microsoft.com/en-us/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d)
 
+## Fix Bare URLs
+
+* `https://github.directory/api/ping?q=kyle` -> `[github.directory/api/ping?q=kyle](https://github.directory/api/ping?q=kyle)`
+* `https://github.directory/api/ping?q=kyle` -> `<https://github.directory/api/ping?q=kyle>`
+
 ## Snippets
 
 * Wrap KBD Text
