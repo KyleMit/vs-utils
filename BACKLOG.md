@@ -8,6 +8,14 @@
 
 Just like [In Excel](https://support.microsoft.com/en-us/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d)
 
+
+## Inline Link Title
+
+Raw link to markdown link
+
+**FROM**: `https://github.com/microsoft/vscode/issues/20837`
+**TO**:   `[copy/paste with another theme · Issue #20837 · microsoft/vscode](https://github.com/microsoft/vscode/issues/20837)`
+
 ## Snippets
 
 * Wrap KBD Text
