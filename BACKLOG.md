@@ -8,6 +8,7 @@
 
 Just like [In Excel](https://support.microsoft.com/en-us/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d)
 
+
 ## Fix Bare URLs
 
 * `https://github.directory/api/ping?q=kyle` -> `[github.directory/api/ping?q=kyle](https://github.directory/api/ping?q=kyle)`
@@ -29,7 +30,7 @@ Just like [In Excel](https://support.microsoft.com/en-us/office/find-and-remove-
 
 ## Download Remote Images
 
-**From**: `Posts/file-name.md` > `![image Desc](https://imgur.com/asef.png)
+**From**: `Posts/file-name.md` > ![image Desc](https://imgur.com/asef.png)
 **To**: `Assets/Posts/File-Name/image-desc.png`
 
 ## Eleventy Debug Configuration Template
@@ -48,6 +49,15 @@ Just like [In Excel](https://support.microsoft.com/en-us/office/find-and-remove-
     ]
 },
 ```
+
+
+## Inline Link Title
+
+Raw link to markdown link
+
+**FROM**: `https://github.com/microsoft/vscode/issues/20837`
+**TO**:   `[copy/paste with another theme · Issue #20837 · microsoft/vscode](https://github.com/microsoft/vscode/issues/20837)`
+
 
 ## Snippets
 
