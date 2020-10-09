@@ -13,6 +13,42 @@ Just like [In Excel](https://support.microsoft.com/en-us/office/find-and-remove-
 * `https://github.directory/api/ping?q=kyle` -> `[github.directory/api/ping?q=kyle](https://github.directory/api/ping?q=kyle)`
 * `https://github.directory/api/ping?q=kyle` -> `<https://github.directory/api/ping?q=kyle>`
 
+
+## Convert Inline Links to Reference Links
+
+* [Convert markdown links from inline to reference](https://stackoverflow.com/q/30917399/1366033)
+* [Convert markdown links to html with Pandoc](https://stackoverflow.com/q/40993488/1366033)
+* [convert duplicate links to references in markdown](https://stackoverflow.com/q/61067730/1366033)
+* [Convert markdown inline links to reference style links with Pandoc](https://raymii.org/s/articles/Convert_markdown_inline_links_to_reference_style_links_with_Pandoc.html)
+* [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/#links)
+
+## Convert Stack Overflow Link to Share link
+
+**From**: `https://stackoverflow.com/questions/30917399/convert-markdown-links-from-inline-to-reference`
+**To**:   `https://stackoverflow.com/q/30917399/1366033`
+
+## Download Remote Images
+
+**From**: `Posts/file-name.md` > `![image Desc](https://imgur.com/asef.png)
+**To**: `Assets/Posts/File-Name/image-desc.png`
+
+## Eleventy Debug Configuration Template
+
+[API > Debugger](https://code.visualstudio.com/api/extension-guides/debugger-extension#anatomy-of-the-package.json-of-a-debugger-extension)
+
+```json
+{
+    "type": "node",
+    "request": "launch",
+    "name": "Launch 11ty",
+    "program": "${workspaceFolder}/node_modules/@11ty/eleventy/cmd.js",
+    "args": [],
+    "runtimeArgs": [
+        "--preserve-symlinks"
+    ]
+},
+```
+
 ## Snippets
 
 * Wrap KBD Text
@@ -28,3 +64,8 @@ Just like [In Excel](https://support.microsoft.com/en-us/office/find-and-remove-
 [Copy with syntax highlighting](https://code.visualstudio.com/updates/v1_10#_copy-with-syntax-highlighting) in v1.10 (Feb 2017)
 
 **Prior Art**: [atian25/vscode-copy-syntax](https://github.com/atian25/vscode-copy-syntax)
+
+## Add Enablement / Where Clause Checks
+
+* Remove Duplicates should only be available when text selected
+* Refresh Spell check should only be available if [**Code Spell Checker**](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) is installed
