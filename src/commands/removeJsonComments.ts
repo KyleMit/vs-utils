@@ -1,8 +1,11 @@
 
 import * as vscode from 'vscode';
+import { parse } from 'jsonc-parser';
 import { pluralize } from '../utils';
 
-let removeDuplicates = vscode.commands.registerCommand('vs-utils.removeDuplicates', () => {
+// TODO: only activate in json/jsonc file
+// Clean whole file if selection not made
+let removeJsonComments = vscode.commands.registerCommand('vs-utils.removeJsonComments', () => {
 
     // Get the active text editor
     let editor = vscode.window.activeTextEditor;
@@ -17,24 +20,19 @@ let removeDuplicates = vscode.commands.registerCommand('vs-utils.removeDuplicate
 
     // Get the word within the selection
     let selText = document.getText(selection);
-
-    let lines = selText.split('\n');
-    let dedupeLines = [...new Set(lines)];
-    let dedupeText = dedupeLines.join('\n');
+    let obj = parse(selText);
+    let result = JSON.stringify(obj, null, 2);
 
     editor.edit(editBuilder => {
-        editBuilder.replace(selection, dedupeText);
+        editBuilder.replace(selection, result);
     });
 
     // build message
-    let lineCount = lines.length;
-    let finalCount = dedupeLines.length;
-    let duplicateCount = lineCount - finalCount;
-
-    let msg = `Removed ${pluralize(duplicateCount, "duplicate")} of ${pluralize(lineCount, "line")}`;
+    let removedChars = Math.max(selText.length - result.length, 0);
+    let msg = `Removed ${pluralize(removedChars, "character")}`;
 
     // Display a message box to the user
     vscode.window.showInformationMessage(msg);
 });
 
-export { removeDuplicates };
+export { removeJsonComments as removeDuplicates };
