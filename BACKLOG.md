@@ -33,6 +33,26 @@ Just like [In Excel](https://support.microsoft.com/en-us/office/find-and-remove-
 **From**: `Posts/file-name.md` > ![image Desc](https://imgur.com/asef.png)
 **To**: `Assets/Posts/File-Name/image-desc.png`
 
+
+## Add Images from folder
+
+* Drag and Drop onto MD?
+
+**From**: file: `lb-prod.png`
+**To**: `[lb prod](/assets/images/lb-prod.png)`
+
+
+## Close all Working Tree Files
+
+> [Command to Close All working-tree files](https://github.com/microsoft/vscode/issues/81067)
+
+* [For VS Code what is the accepted alternative to the deprecated TextEditor.hide() function?](https://stackoverflow.com/q/47730015/1366033)
+  * [Programmatically closing textDocuments in VSCode](https://github.com/microsoft/vscode/issues/39214)
+* [How do I search open editors for a file with a given extension?](https://stackoverflow.com/q/55659228/1366033)
+  * [API Access to "Open Editors"](https://github.com/microsoft/vscode/issues/15178)
+
+* (Untracked) / (Index) / (Working Tree)
+
 ## Eleventy Debug Configuration Template
 
 [API > Debugger](https://code.visualstudio.com/api/extension-guides/debugger-extension#anatomy-of-the-package.json-of-a-debugger-extension)
