@@ -1,7 +1,6 @@
 name: "publish-ext"
 
 on:
-
   release:
     types:
     - created

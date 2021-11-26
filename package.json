@@ -4,6 +4,18 @@
     "description": "Personal utilities for VS Code",
     "publisher": "KyleMit",
     "version": "0.1.3",
+    "license": "MIT",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint src --ext ts",
+        "watch": "tsc -watch -p ./",
+        "deploy": "vsce publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KyleMit/vs-utils.git"
+    },
     "engines": {
         "vscode": "^1.48.0"
     },
@@ -43,12 +55,8 @@
             }
         ]
     },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "lint": "eslint src --ext ts",
-        "watch": "tsc -watch -p ./",
-        "deploy": "vsce publish"
+    "dependencies": {
+        "jsonc-parser": "^3.0.0"
     },
     "devDependencies": {
         "@types/node": "^14.0.27",
@@ -58,13 +66,6 @@
         "eslint": "^7.6.0",
         "typescript": "^3.8.3",
         "vsce": "^1.79.4"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/KyleMit/vs-utils.git"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "jsonc-parser": "^3.0.0"
     }
+
 }

@@ -51,3 +51,8 @@ vsce package
 vsce publish minor
 vsce publish
 ```
+
+### Github Workflows
+
+* Create Release -> AutoPublish
+
