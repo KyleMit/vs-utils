@@ -3,7 +3,7 @@ import { refreshCspell } from './commands/refreshCspell';
 import { removeDuplicates } from './commands/removeDuplicates';
 
 // this method is called when your extension is activated
-export function activate(context: vscode.ExtensionContext) {
+export const activate = (context: vscode.ExtensionContext) => {
 
 	// log activation
 	console.log('The extension "vs-utils" is now active!');
@@ -11,4 +11,4 @@ export function activate(context: vscode.ExtensionContext) {
 	// add commands to activation context
 	context.subscriptions.push(refreshCspell);
 	context.subscriptions.push(removeDuplicates);
-}
+};

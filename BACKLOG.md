@@ -99,3 +99,39 @@ Raw link to markdown link
 
 * Remove Duplicates should only be available when text selected
 * Refresh Spell check should only be available if [**Code Spell Checker**](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) is installed
+
+## Covert Markdown - Indented -> Fenced Code Block
+
+
+From:
+
+~~~md
+<!-- language: lang-vb -->
+
+    Dim name = "Kyle"
+~~~
+
+To:
+
+~~~md
+```vb
+Dim name = "Kyle"
+```
+~~~
+
+## Convert Markdown - Setext -> Atx Headers
+
+From:
+
+```md
+Intro
+------
+```
+
+To:
+
+```md
+# Intro
+```
+
+
