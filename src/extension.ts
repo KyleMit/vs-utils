@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
-import { refreshCspell } from './commands/refreshCspell';
-import { removeDuplicates } from './commands/removeDuplicates';
+import { refreshCspell, removeDuplicates, removeJsonComments } from './commands';
+
 
 // this method is called when your extension is activated
 export const activate = (context: vscode.ExtensionContext) => {
@@ -11,4 +11,6 @@ export const activate = (context: vscode.ExtensionContext) => {
 	// add commands to activation context
 	context.subscriptions.push(refreshCspell);
 	context.subscriptions.push(removeDuplicates);
+	context.subscriptions.push(removeJsonComments);
+
 };

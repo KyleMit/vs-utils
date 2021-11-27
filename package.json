@@ -31,7 +31,8 @@
     ],
     "activationEvents": [
         "onCommand:vs-utils.refreshCspell",
-        "onCommand:vs-utils.removeDuplicates"
+        "onCommand:vs-utils.removeDuplicates",
+        "onCommand:vs-utils.removeJsonComments"
     ],
     "main": "./out/extension.js",
     "contributes": {
