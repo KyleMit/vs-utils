@@ -17,7 +17,7 @@
         "url": "https://github.com/KyleMit/vs-utils.git"
     },
     "engines": {
-        "vscode": "^1.48.0"
+        "vscode": "^1.62.0"
     },
     "icon": "images/code-cog.png",
     "galleryBanner": {
@@ -57,7 +57,8 @@
         ]
     },
     "dependencies": {
-        "jsonc-parser": "^3.0.0"
+        "jsonc-parser": "^3.0.0",
+        "vsce": "^2.5.0"
     },
     "devDependencies": {
         "@types/node": "^14.0.27",
@@ -65,7 +66,6 @@
         "@typescript-eslint/eslint-plugin": "^5.4.0",
         "@typescript-eslint/parser": "^5.4.0",
         "eslint": "^8.3.0",
-        "typescript": "^4.5.2",
-        "vsce": "^2.5.0"
+        "typescript": "^4.5.2"
     }
 }
